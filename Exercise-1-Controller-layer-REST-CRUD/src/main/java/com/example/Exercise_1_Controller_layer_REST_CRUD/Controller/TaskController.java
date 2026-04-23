@@ -59,7 +59,7 @@ public class TaskController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ApiResponse updateTask(@PathVariable int id) {
+    public ApiResponse deleteTask(@PathVariable int id) {
         for (int i = 0; i < tasks.size(); i++) {
             if (tasks.get(i).getId() == id) {
                 tasks.remove(i);
