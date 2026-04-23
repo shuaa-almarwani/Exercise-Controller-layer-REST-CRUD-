@@ -75,7 +75,7 @@ public class CustomersController {
                     return new ApiResponse("amount above the balance");
                 }
                 customer.setBalance(oldBalance - amount);
-                return new ApiResponse("Deposit successful. Old Balance:"+ oldBalance+ " | Current Balance: "+ customer.getBalance());
+                return new ApiResponse("Withdrawal successful. Old Balance:"+ oldBalance+ " | Current Balance: "+ customer.getBalance());
 
 
             }
